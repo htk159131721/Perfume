@@ -1,0 +1,30 @@
+{
+  "name": "perfume",
+	"version": "1.0.0",
+	"description": "Perfume",
+  "main": "index.js",
+  "repository": "git@github.com:htk159131721/Perfume.git",
+  "author": "HuynhKha <huynhkha8295@gmail.com>",
+	"license": "MIT",
+	"private": "true",
+	"scripts": {
+		"serve:backend": "yarn workspace @app/backend run start:dev"
+	},
+	"workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/ts-jest",
+      "**/ts-jest/**",
+      "**/ts-node",
+      "**/ts-node/**",
+      "**/jest",
+      "**/jest/**",
+      "**/@types/jest",
+      "**/@types/jest/**",
+      "**/@types/node",
+      "**/@types/node/**"
+    ]
+  }
+}
